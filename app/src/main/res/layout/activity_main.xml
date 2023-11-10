@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="410dp"
+        android:layout_height="55dp"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="#000000"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="678dp">
+
+        <Button
+            android:id="@+id/button"
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="136.6dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:background="#00FFFFFF"
+            android:gravity="center"
+            android:text="HOME"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:icon="@drawable/baseline_home_24"
+            app:iconGravity="top"
+            app:iconPadding="1dp"
+            app:iconSize="20dp"
+            app:iconTint="#000000" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="136.6dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="136.6dp"
+            android:background="#00FFFFFF"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="CATEGORY"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:icon="@drawable/baseline_dehaze_24"
+
+            app:iconGravity="top"
+            app:iconPadding="1dp"
+            app:iconSize="20dp"
+            app:iconTint="#000000" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="136.8dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="273.2dp"
+            android:background="#00FFFFFF"
+            android:gravity="center"
+            android:text="ME"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:icon="@drawable/baseline_person_24"
+            app:iconGravity="top"
+            app:iconPadding="1dp"
+            app:iconSize="20dp"
+            app:iconTint="#000000" />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <android.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/search_bg"
+        android:searchHintIcon="@android:drawable/ic_menu_search"
+        android:showDividers="beginning"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="10dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="610dp"
+        app:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="56dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteY="55dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <include layout="@layout/r1" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <include layout="@layout/r1" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <include layout="@layout/r1" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
