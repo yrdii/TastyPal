@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="410dp"
+        android:layout_height="55dp"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="#000000"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="678dp">
+
+        <Button
+            android:id="@+id/button"
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="136.6dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:background="#00FFFFFF"
+            android:gravity="center"
+            android:text="HOME"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:icon="@drawable/baseline_home_24"
+            app:iconGravity="top"
+            app:iconPadding="1dp"
+            app:iconSize="20dp"
+            app:iconTint="#000000" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="136.6dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="136.6dp"
+            android:background="#00FFFFFF"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="CATEGORY"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:icon="@drawable/baseline_dehaze_24"
+
+            app:iconGravity="top"
+            app:iconPadding="1dp"
+            app:iconSize="20dp"
+            app:iconTint="#000000" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="136.8dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="273.2dp"
+            android:background="#00FFFFFF"
+            android:gravity="center"
+            android:text="ME"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:icon="@drawable/baseline_person_24"
+            app:iconGravity="top"
+            app:iconPadding="1dp"
+            app:iconSize="20dp"
+            app:iconTint="#000000" />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <include layout="@layout/user" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="112dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/material_dynamic_neutral60"
+            android:orientation="horizontal"></LinearLayout>
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:gravity="center_vertical"
+            android:text="      Dietary Preference"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:icon="@drawable/baseline_flatware_24"
+            app:iconGravity="textStart"
+            app:iconPadding="1dp"
+            app:iconSize="20dp"
+            app:iconTint="#000000" />
+
+        <Button
+            android:id="@+id/button9"
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:gravity="center_vertical"
+            android:text="      Favorite Recipes"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:icon="@drawable/baseline_favorite_24"
+            app:iconGravity="textStart"
+            app:iconPadding="1dp"
+            app:iconSize="20dp"
+            app:iconTint="#000000" />
+
+        <Button
+            android:id="@+id/button6"
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:gravity="center_vertical"
+            android:text="      Help"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:icon="@drawable/baseline_help_24"
+            app:iconGravity="textStart"
+            app:iconPadding="1dp"
+            app:iconSize="20dp"
+            app:iconTint="#000000" />
+
+        <Button
+            android:id="@+id/button7"
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:gravity="center_vertical"
+            android:text="      Settings"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:icon="@drawable/baseline_settings_24"
+            app:iconGravity="textStart"
+            app:iconPadding="1dp"
+            app:iconSize="20dp"
+            app:iconTint="#000000" />
+
+        <Button
+            android:id="@+id/button8"
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:gravity="center_vertical"
+            android:text="      Info"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:icon="@drawable/baseline_info_24"
+            app:iconGravity="textStart"
+            app:iconPadding="1dp"
+            app:iconSize="20dp"
+            app:iconTint="#000000" />
+
+        <Button
+            android:id="@+id/button10"
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:gravity="center_vertical"
+            android:text="      Privacy"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:icon="@drawable/baseline_privacy_tip_24"
+            app:iconGravity="textStart"
+            app:iconPadding="1dp"
+            app:iconSize="20dp"
+            app:iconTint="#000000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="274dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="403dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:text=" version" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
