@@ -1,3 +1,3 @@
 # Layout
 
-To see the UI design, go to res->layout.
+To see the UI design, go to app/src/main/res/layout.
